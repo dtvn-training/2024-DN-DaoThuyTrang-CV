@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-:root{
+
+:root {
     --border: 1px solid #dce1e4;
     --box-shadow: 5px 5px 15px #c1c8d3,
     -5px -5px 15px #fff;
     --gradient: linear-gradient(to right,#e4b6ec, #62bad3);
 }
-body{
+
+body {
     font-family: 'Libre Baskerville', serif;
     background-color: #eaecee;
     color: #3c3e41;
@@ -15,11 +17,13 @@ body{
     justify-content: center;
 
 }
-a{
+
+a {
     color: #3c3e41;
     text-decoration: none;
 }
-header{
+
+header {
     padding:8px;
     width: 90%;
     top: 5px;
@@ -38,35 +42,42 @@ header{
     z-index: 1;
     
 }
-header:hover{
+
+header:hover {
     background-image: var(--gradient);
 }
-header .nav li a:hover{
+
+header .nav li a:hover {
     color: #fff;
 }
+
 .rounded-circle {
     border-radius: 50% !important;
     margin-right: 10px;
     box-shadow: var(--box-shadow);
 }
+
 header .logo {
     display: flex;
     align-items: center;
     font-weight: 700;
 }
-header ul{
+
+header ul {
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: end;
     align-items: center;
 }
-header ul li{
+
+header ul li {
     padding: 0 20px;
     font-size: 15px;
     font-weight: 700;
 }
-.bg{
+
+.bg {
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -80,7 +91,8 @@ header ul li{
     background-position: center; /* Đặt vị trí của ảnh nền ở giữa */
     background-repeat: no-repeat; /* Ngăn lặp lại ảnh nền */
 }
-.introduce{
+
+.introduce {
     display: grid;
     height: 25%;
     width: 100%;
@@ -94,21 +106,24 @@ header ul li{
     background-position: center; /* Đặt vị trí của ảnh nền ở giữa */
     background-repeat: no-repeat; /* Ngăn lặp lại ảnh nền */
 }
-.introduce .gradient{
+
+.introduce .gradient {
     font-weight: 700;
     margin: auto;
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
 }
-.introduce .gradient h1{
+
+.introduce .gradient h1 {
     font-size: 50px;
     animation: showLetters 2s steps(21, end) forwards;
     background: linear-gradient(to right,#bb58cc, #0c85a7);;  /*background color from left to right*/
     -webkit-background-clip: text;
     color: transparent;
 }
-.introduce .gradient h2{
+
+.introduce .gradient h2 {
     font-size: 25px;
     animation: showLetters 2s steps(21, end) forwards;
     animation-delay: 2s;
@@ -116,42 +131,50 @@ header ul li{
     -webkit-background-clip: text;
     color: transparent;
 }
-@keyframes showLetters{
-    from{
+
+@keyframes showLetters {
+    from {
         max-width: 0;      
-    }to{
+    }to {
         max-width: 100%;
     }
 }
-.introduce .avatar{
+
+.introduce .avatar {
     left: 0; 
     display: flex;
     align-items: center;
 }
-.btn{
+
+.btn {
    border-radius: 8px;
    transition: 0.5s;
    border: 2px solid #2da0c3;
    font-size: 18px;
    padding: 8px 22px;
 }
-.btn:hover{
+
+.btn:hover {
     color: #fff;
     background-image: var(--gradient);
 }
-.find{
+
+.find {
     margin-top: 75px;
     
 }
-.contact{
+
+.contact {
     margin-top: 30px;
 }
-.contact ul{
+
+.contact ul {
    padding: 0;
    list-style: none;
    display: flex;
 }
-.contact ul li{
+
+.contact ul li {
     width: 50px;
     height: 50px;
     box-shadow: var(--box-shadow);
@@ -163,13 +186,16 @@ header ul li{
     transition: 0.5s;
     font-size: 30px;
 }
-.contact ul li:hover{
+
+.contact ul li:hover {
     background-image: var(--gradient);
 }
-.contact i:hover{
+
+.contact i:hover {
     color: #fff;
 }
-.title{
+
+.title {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -177,7 +203,8 @@ header ul li{
     margin-top: 50px;
     font-size: 24px;
 }
-#about{
+
+#about {
     width: 80%;
     border-bottom: var(--border);
     box-shadow: var(--box-shadow);
@@ -190,42 +217,52 @@ header ul li{
     flex-direction: column;
     transition: 0.5s;
 }
-#about:hover{
+
+#about:hover {
     background:#fdfdfd;
 }
-.listAbout{
+
+.listAbout {
     width: 90%;
     align-items: center;
     justify-content: center;
     text-align: justify;
 }
-.listAbout .item{
+
+.listAbout .item {
     margin-top: 30px;
 }
-.listAbout .item .infor{
+
+.listAbout .item .infor {
     display: grid;
     grid-template-columns: 45% 55%;
 }
-#border-column{
+
+#border-column {
     border-left: 1px dotted #3c3e41;
     padding-left: 20px;
 }
-.item h3{
+
+.item h3 {
     font-size: 20px;
 }
-.item .content{
+
+.item .content {
     font-size: 18px;
 }
-.item1 ul{
+
+.item1 ul {
     list-style: none;
     text-align: left;
 }
-.item1 ul li{
+
+.item1 ul li {
     margin-top: 10px;
     display: flex;
     font-size: 18px;
 }
-.item1 ul li .icon{
+
+.item1 ul li .icon {
     width: 35px;
     height: 35px;
     box-shadow: var(--box-shadow);
@@ -238,27 +275,33 @@ header ul li{
     font-size: 15px;
     border: 2px solid #8bd6e4
 }
-.item1 ul li .icon:hover{
+
+.item1 ul li .icon:hover {
     background-color: #65cbeb;
     border: 2px solid #fff;
 }
-.item1 i:hover{
+
+.item1 i:hover {
     color: #fff;
 }
-.mb-0{
+
+.mb-0 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.mb-0 .mb-bold{
+
+.mb-0 .mb-bold {
     font-size: 16px;
     font-weight: 700;
 }
-.mb-0 .mb-small{
+
+.mb-0 .mb-small {
     font-size: 14px;
     font-weight: 400;
 }
-.ul-1{
+
+.ul-1 {
     list-style: none;
     text-align: left;
     display: grid;
@@ -266,13 +309,15 @@ header ul li{
     /* grid-template-rows: 50% 50%; */
     justify-items: center;
 }
-.ul-1 .hobby{
+
+.ul-1 .hobby {
     position: relative;
     display: inline-block;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.ul-1 .hobby img{
+
+.ul-1 .hobby img {
     width: 300px;
     height: 200px;
     border-radius: 10px;
@@ -280,7 +325,8 @@ header ul li{
     display: block;
     transition: filter 0.3s ease;
 }
-.ul-1 .hobby a{
+
+.ul-1 .hobby a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,12 +336,15 @@ header ul li{
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 .ul-1 .hobby:hover img {
     filter: brightness(30%); /* Khi hover vào .hobby, làm mờ ảnh */
 }
+
 .ul-1 .hobby:hover a {
     opacity: 1; /* Khi hover vào .hobby, hiện chữ */
 }
+
 /* object */
 #timeline {
     list-style: none;
@@ -303,13 +352,16 @@ header ul li{
     padding-left: 30px;
     border-left: 8px solid #2da0c3;
 }
+
 #timeline li {
     margin: 40px 0;
     position: relative;
 }
+
 #timeline p {
     margin: 0 0 15px;
 }
+
 .date {
     margin-top: -10px;
     top: 50%;
@@ -319,6 +371,7 @@ header ul li{
     line-height: 20px;
     position: absolute;
 }
+
 .circle {
     margin-top: -10px;
     top: 50%;
@@ -331,14 +384,16 @@ header ul li{
     display: block;
     position: absolute;
 }
+
 .content-1 {
     max-height: 20px;
     padding: 50px 20px 0;
     border-color: transparent;
     position: relative;
 }
+
 .content-1:before,
-.content-1:after{
+.content-1:after {
   content: "";
   width: 0;
   height: 0;
@@ -347,22 +402,24 @@ header ul li{
   pointer-events: none;
   right: 100%;
 }
+
 .content-1:before {
     border-right-color: inherit;
     border-width: 20px;
     top: 50%;
     margin-top: -20px;
-  }
+}
   
-/* .content-1:after {
+/* .content-1:after  {
     border-right-color: rgb(224, 245, 244);
     border-width: 17px;
     top: 50%;
     margin-top: -17px;
 } */
-/* .content-1:hover{
+/* .content-1:hover {
     border-right-color: #fff;
 } */
+
 .content-1 p {
     max-height: 0;
     color: transparent;
@@ -371,6 +428,7 @@ header ul li{
     hyphens: auto;
     overflow: hidden;
 }
+
 label {
     font-size: 20px;
     font-weight: 700;
@@ -380,37 +438,44 @@ label {
     top: 20px;
     transition: transform 0.2s linear;
 }
+
 .radio {
     display: none;
 }
+
 .radio:checked + .relative label {
     cursor: auto;
     transform: translateX(42px);
 }
+
 .radio:checked ~ .content-1 {
     max-height: 180px;
     border-color: #85ceeb;
     margin-right: 20px;
     transform: translateX(20px);
 }
+
 .radio:checked ~ .content-1 p {
     max-height: 200px;
     color: #02383f;
     transition: color 0.3s linear 0.3s;
-}  
+}
+
 /* skill */
-.skill ul{
+.skill ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
 
 }
-.skill h4{
+
+.skill h4 {
     font-weight: 700;
     font-size: 20px;
 }
-.skill ul li .skill-1{
+
+.skill ul li .skill-1 {
     width: 110px;
     height: 110px;
     box-shadow: var(--box-shadow);
@@ -422,18 +487,21 @@ label {
     justify-content: flex-end;
     align-items: center;
 }
-.skill ul li .skill-1 img{
+
+.skill ul li .skill-1 img {
     width: 80px;
     height: 80px;
     
 }
+
 /* EPX */
-#infor-exp{
+#infor-exp {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.exp{
+
+.exp {
     width: 80%;
     height: 250px;
     border-bottom: var(--border);
@@ -451,10 +519,12 @@ label {
     border: 2px solid #72cad9;
     
 }
-.exp:hover{
+
+.exp:hover {
     border: 2px solid #fff;
 }
-.exp .company{
+
+.exp .company {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,36 +533,43 @@ label {
     background:#7fcce6;
     height: 250px; 
 }
-.exp .company:hover{
+
+.exp .company:hover {
     background:var(--gradient);
     border-right: 1px dotted #fff;
     color: #fff;
 }
-.exp .company b{
+
+.exp .company b {
    font-size: 20px;
    font-weight: 700; 
 }
-.exp .company p{
+
+.exp .company p {
     font-size: 16px;
     font-weight: 400; 
 }
-.exp .infor-company{
+
+.exp .infor-company {
     padding: 15px;
 }
-.exp .infor-company p{
+
+.exp .infor-company p {
     font-size: 18px;
     margin-bottom: 25px;
     text-align: justify;
 }
+
 /* project */
-#infor-project{
+#infor-project {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
 }
-.project{
+
+.project {
     width: 25%;
-    height: 550px;
+    height: 25%;
     border-bottom: var(--border);
     box-shadow: var(--box-shadow);
     background: #fdfdfd; 
@@ -505,32 +582,37 @@ label {
     align-items: stretch;
     justify-items: stretch;
     transition: 0.5s;
-    border: 2px solid #72cad9;
-    
+    border: 2px solid #72cad9;  
 }
-.project:hover{
+
+.project:hover {
     border: 2px solid #fff;
 }
-.project .img-project{
+
+.project .img-project {
     border-bottom: 1px dotted #3c3e41;
 }
-.tools{
+
+.tools {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 
 }
-.tools ul{
+
+.tools ul {
     list-style: none;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 
 }
-.tools ul li{
+
+.tools ul li {
     list-style: none;
 }
-.tools ul li .skill-2{
+
+.tools ul li .skill-2 {
     width: 40px;
     height: 40px;
     box-shadow: var(--box-shadow);
@@ -543,45 +625,54 @@ label {
     align-items: center;
     margin-top: 10px;
 }
-.tools ul li .skill-2 img{
+
+.tools ul li .skill-2 img {
     width: 30px;
     height: 30px;
 }
-.tools ul li .skill-2 a{
+
+.tools ul li .skill-2 a {
     font-size: 8px;
 }
-.project .content-project{
+
+.project .content-project {
     margin: 0 20px;
 }
-.project .content-project p{
+
+.project .content-project p {
     font-size: 14px;
     margin-bottom: 15px;
     text-align: justify;
     height: 110px;
 }
-.find-2{
+
+.find-2 {
     display: flex;
     justify-content: space-evenly;
 }
-.btn-1{
+
+.btn-1 {
     border-radius: 8px;
     transition: 0.5s;
     border: 2px solid #2da0c3;
     font-size: 12px;
     padding: 6px 14px;
- }
- .btn-1:hover{
+}
+
+.btn-1:hover {
      color: #fff;
      background-image: var(--gradient);
- }
-.img-project{
+}
+
+.img-project {
     position: relative;
     display: inline-block;
     margin: 2.5px 2.5px;
     /* margin-top: 15px;
     margin-bottom: 15px; */
 }
-.img-project img{
+
+.img-project img {
     width: 100%;
     height: 100%;
     box-shadow: var(--box-shadow);
@@ -589,7 +680,8 @@ label {
     transition: filter 0.3s ease;
     border-radius: 8px;
 }
-.img-project b{
+
+.img-project b {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -599,26 +691,27 @@ label {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 .img-project:hover img {
     filter: brightness(30%); /* Khi hover vào .hobby, làm mờ ảnh */
 }
-.img-project:hover b{
+
+.img-project:hover b {
     opacity: 1; /* Khi hover vào .hobby, hiện chữ */
 }
-.listOther .item-3 ul li{
+
+.listOther .item-3 ul li {
     list-style: none;
 }
 
-.listOther .item-3 ul li h3{
+.listOther .item-3 ul li h3 {
     font-size: 14px;
     margin-bottom: 5px;
 }
-footer{
+
+footer {
     background-color: #fff;
     text-align: center;
     height: 35px;
     border-bottom: var(--border);
 }
-
-
-
